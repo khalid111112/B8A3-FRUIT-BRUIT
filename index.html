@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Fruit</title>
+</head>
+<body>
+    <header class="container ">
+      <div class="moble md:hidden px-5 flex justify-between mt-2">
+        <div class="moble-logo flex align-middle gap-2 ">
+          <img src="images/logo.png" class="w-10">
+          <h1 class="text-3xl">Fruit Burst</h1>
+        </div>
+        <div class=" ">
+          <div >
+            <i id="ham" class="fa-solid fa-bars pr-5 mt-3 text-xl"></i>
+          </div>
+          <ul class="mr-5 mobile-item ">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">All Fruits</a></li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="nav mt-5 hidden md:flex md:justify-around align-middle bg-red-600 rounded-xl p-4">
+            <div class="list mt-2">
+                <ul class="flex gap-5 text-xl">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">About Us</a></li>
+                    <li><a href="#" class="text-white">Shop</a></li>
+                    <li><a href="#" class="text-white">All Fruits</a></li>
+                </ul>
+            </div>
+
+            <div class="logo flex gap-2">
+                <img src="images/logo.png" class="w-10">
+                <p class="text-3xl font-bold text-white">Fruit Burst</p>
+            </div>
+
+            <div class="serch mt-2">
+                <div class="input-serch  relative ">
+                    <input type="search" class="bg-white rounded-xl  p-1" id="">
+                    <i class="fa-solid fa-magnifying-glass absolute left-48 top-2 text-slate-900"></i>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="slider container px-5 mt-5 relative">
+        <div class="carousel w-full">
+
+            <div id="slide1" class="carousel-item   relative w-full">
+              <img src="images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+              <div class="slider-text absolute text-white top-[50%] left-[50%] text-xl translate-x-[-50%] translate-y-[-50%]  text-center ">
+                <h1 class="font-bold md:text-4xl mb-5">Exotic tastes at your <br> doorstep</h1>
+                <p class="md:text-xl md:mb-5">We supply highly quality organic products</p>
+                <button class="bg-red-600 md:p-3 rounded-sm text-xl p-1 text-center">Shop Now</button>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+              <div class="slider-text absolute text-white top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  text-center ">
+                <h1 class="font-bold text-xl md:text-4xl mb-5">Exotic tastes at your <br> doorstep</h1>
+                <p class="text-xl md:mb-5">We supply highly quality organic products</p>
+                <button class="bg-red-600 md:p-3 rounded-sm text-xl p-1 text-center">Shop Now</button>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+              <div class="slider-text absolute text-white top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  text-center ">
+                <h1 class="font-bold text-xl md:text-4xl mb-5">Exotic tastes at your <br> doorstep</h1>
+                <p class="text-xl md:mb-5">We supply highly quality organic products</p>
+                <button class="bg-red-600 md:p-3 rounded-sm text-xl text-center">Shop Now</button>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+               <div class="slider-text absolute text-white top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  text-center ">
+                <h1 class="font-bold text-xl md:text-4xl mb-5">Exotic tastes at your <br> doorstep</h1>
+                <p class="text-xl md:mb-5">We supply highly quality organic products</p>
+                <button class="bg-red-600 md:p-3 rounded-sm text-xl p-1 text-center">Shop Now</button>
+              </div>
+            </div>
+          
+        </div>
+
+      <div class="froots shadow-md hidden bg-white md:flex  absolute bottom-[-10%] left-[50%] translate-x-[-50%] gap-40 p-10">
+            <div class="froot-1">
+                <img src="images/fruit1.png" alt="">
+                <p class=" text-xl ">Strawberry</p>
+            </div>
+            <div class="froot-2">
+                <img src="images/fruit2.png" alt="">
+                <p class=" text-xl ">Orange</p>
+            </div>
+            <div class="froot-3">
+                <img src="images/fruit3.png" alt="">
+                <p class=" text-xl ">Mango</p>
+
+            </div>
+            <div class="froot-4">
+                <img src="images/fruit4.png" alt="">
+                <p class=" text-xl ">Strawbetty</p>
+            </div>
+            <div class="froot-5">
+                <img src="images/fruit5.png" alt="">
+                <p class=" text-xl ">Mango</p>
+            </div>
+      </div>
+  </div>
+
+  <section class="container md:mt-40">
+    <div class="pop_up">
+      <div class="pop-text md:flex justify-between">
+        <div class="left w-full text-center md:text-left px-5 md:basis-[45%]">
+          <h1 class="text-4xl font-bold">Deal of the day</h1>
+          <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nesciunt consectetur, id autem mollitia deserunt.</p>
+        </div>
+        <div class="right justify-center flex gap-5">
+          <div>
+            <h1 class="text-2xl font-bold">29 : </h1>
+          <p>Days</p>
+          </div>
+          <div>
+            <h1 class="text-2xl font-bold">15 : </h1>
+            <p>Hours</p>
+          </div>
+            <div>
+              <h1 class="text-2xl font-bold">25 : </h1>
+              <p>Minutes</p>
+          </div>
+          <div>
+                <h1 class="text-2xl font-bold">08 : </h1>
+                <p>Secont</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:flex justify-center px-5 gap-2 mt-16">
+      <div class="pop-overlay"></div>
+      <div class="card md:w-[25%]  shadow-xl border" id="popUpBtn1">
+        <figure class="px-10 pt-10">
+          <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title ">12.90$-18.85$</h2>
+          <div class="w-[80%] bg-black h-0.5"></div>
+          <p>apples</p>
+          <p>
+            <i class="fa-solid fa-star text-red-500"></i>
+            <i class="fa-solid fa-star text-red-500"></i>
+            <i class="fa-regular fa-star text-red-400"></i>
+            <i class="fa-regular fa-star text-red-400"></i>
+            <i class="fa-regular fa-star text-red-400"></i>
+          </p>
+          <div class="card-actions">
+            <button class="text-red-600">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card md:w-[25%]  shadow-xl border" id="popUpBtn2">
+        <figure class="px-10 pt-10">
+          <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title ">12.90$-18.85$</h2>
+          <div class="w-[80%] bg-black h-0.5"></div>
+          <p>apples</p>
+          <p>
+            <i class="fa-solid fa-star text-red-500"></i>
+            <i class="fa-solid fa-star text-red-500"></i>
+            <i class="fa-regular fa-star text-red-400"></i>
+            <i class="fa-regular fa-star text-red-400"></i>
+            <i class="fa-regular fa-star text-red-400"></i>
+          </p>
+          <div class="card-actions">
+            <button class="text-red-600">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card md:w-[25%] shadow-xl border" id="popUpBtn3">
+        <figure class="px-10 pt-10">
+          <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title ">12.90$-18.85$</h2>
+          <div class="w-[80%] bg-black h-0.5"></div>
+          <p>apples</p>
+          <p>
+            <i class="fa-solid fa-star text-red-500"></i>
+            <i class="fa-solid fa-star text-red-500"></i>
+            <i class="fa-regular fa-star text-red-400"></i>
+            <i class="fa-regular fa-star text-red-400"></i>
+            <i class="fa-regular fa-star text-red-400"></i>
+          </p>
+          <div class="card-actions">
+            <button class="text-red-600">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card md:w-[25%] shadow-xl border" id="popUpBtn4">
+        <figure class="px-10 pt-10">
+          <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title ">12.90$-18.85$</h2>
+          <div class="w-[80%] bg-black h-0.5"></div>
+          <p>apples</p>
+          <p>
+            <i class="fa-solid fa-star text-red-500"></i>
+            <i class="fa-solid fa-star text-red-500"></i>
+            <i class="fa-regular fa-star text-red-400"></i>
+            <i class="fa-regular fa-star text-red-400"></i>
+            <i class="fa-regular fa-star text-red-400"></i>
+          </p>
+          <div class="card-actions">
+            <button class="text-red-600">Details</button>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    <div class="mt-10">
+      <a href="#" class=" md:ml-[50%]  ml-[40%] p-3 bg-red-600 text-white text-xl font-bold rounded-md">Shop All</a>
+    </div>
+  </section>
+  <section class="container">
+    <div class="team mt-20  ">
+      <div class="text-center pt-10">
+        <h1 class="text-3xl text-white">Meet the team section</h1>
+        <p class="text-white text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ex commodi minus ad <br> vel incidunt inventore omnis alias molestias atque?</p>
+      </div>
+      <div class="team-member md:flex md:justify-center xl:gap-20 xl:mt-28 ">
+        <div class="member mt-5 text-center">
+          <img src="images/member1.png" class="ml-[35%]">
+          <p class="text-white mt-1 text-xl">Awiad Hossin</p>
+          <p class="text-white">Fruits Expert</p>
+          <div class="mt-2 text-red-600">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+        <div class="member mt-5 text-center">
+          <img src="images/member2.png" class=" ml-[37%]">
+          <p class="text-white mt-1 text-xl">Safia chowdhury</p>
+          <p class="text-white">Fruits Expert</p>
+          <div class="mt-2 text-red-600">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+        <div class="member mt-5 text-center">
+          <img src="images/member3.png" class="ml-[37%]" >
+          <p class="text-white mt-1 text-xl">Rakib Hossain</p>
+          <p class="text-white">Fruits Expert</p>
+          <div class="mt-2 text-red-600">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+        <div class="member text-center">
+          <img src="images/member4.png" class="ml-[37%]">
+          <p class="text-white mt-1 text-xl">Chaity</p>
+          <p class="text-white">Fruits Expert</p>
+          <div class="mt-2 text-red-600">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container mt-10">
+    <div class="about ">
+      <div class="about-haddar text-center">
+        <h1 class="text-4xl font-bold">Why Choose Us</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates similique mollitia, reiciendis molestias hic?</p>
+      </div>
+      <div class="about-conten px-5 md:flex md:justify-around mt-5">
+
+        <div class="about-left">
+          <div class="left-one flex align-middle justify-center gap-x-3">
+            <div>
+              <i class="fa-solid fa-user text-5xl"></i>
+            </div>
+            <div>
+              <h1 class="text-4xl font-bold">Dedicated Team</h1>
+              <div class="w-28 h-0.5 mt-2 bg-black"></div>
+              <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+          <div class="left-two flex align-middle gap-x-3 mt-10">
+            <div>
+              <i class="fa-solid fa-heart-circle-plus text-5xl"></i>
+            </div>
+            <div>
+              <h1 class="text-4xl font-bold">Fresh is Best</h1>
+              <div class="w-28 h-0.5 mt-2 bg-black"></div>
+              <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+          <div class="left-three mt-10 flex align-middle gap-x-3">
+            <div>
+              <i class="fa-solid fa-gift text-5xl"></i>
+             
+            </div>
+            <div>
+              <h1 class="text-4xl font-bold">Gift Certificates</h1>
+              <div class="w-28 h-0.5 mt-2 bg-black"></div>
+              <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-middel hidden md:flex ">
+          <img src="images/whychoose1.png" class="h-[80%]">
+        </div>
+        <div class="about-right   mt-5">
+          <div class="right-one flex align-middle gap-x-3 md:flex-row-reverse mt-5">
+            <div>
+              <i class="fa-solid fa-user text-5xl"></i>
+            </div>
+            <div class="md:text-right relative">
+              <h1 class="text-4xl font-bold">Dedicated Team</h1>
+              <div class="w-28 h-0.5 mt-2 bg-black absolute right-0"></div>
+              <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+          <div class="right-one flex justify-center align-middle gap-x-3 md:flex-row-reverse mt-10">
+            <div>
+              <i class="fa-solid fa-user text-5xl"></i>
+            </div>
+            <div class="md:text-right relative">
+              <h1 class="text-4xl font-bold">Dedicated Team</h1>
+              <div class="w-28 h-0.5 mt-2 bg-black absolute right-0"></div>
+              <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+          <div class="right-one flex align-middle gap-x-3 ,md:flex-row-reverse mt-10">
+            <div>
+              <i class="fa-solid fa-user text-5xl"></i>
+            </div>
+            <div class="text-right relative">
+              <h1 class="text-4xl font-bold">Dedicated Team</h1>
+              <div class="w-28 h-0.5 mt-2 bg-black absolute right-0"></div>
+              <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="about-middel md:hidden   ">
+            <img src="images/whychoose1.png" class="h-[80%]">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-slate-900 mt-10 pt-10">
+    <div>
+      <div class="logo">
+        <div class="logo flex gap-2 justify-center">
+          <img src="images/logo.png" class="w-10">
+          <p class="text-3xl font-bold text-white">Fruit Burst</p>
+      </div>
+
+      <div class="list mt-2 ">
+        <ul class="flex gap-5 justify-center text-xl">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">About Us</a></li>
+            <li><a href="#" class="text-white">Shop</a></li>
+            <li><a href="#" class="text-white">All Fruits</a></li>
+        </ul>
+    </div>
+    <div class="flex justify-center gap-4 pr-6 pt-4">
+      <div class="bg-blue-600">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </div>
+    <div class="bg-red-600">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </div>
+    <div class="bg-white">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </div>
+    </div>
+      
+  </footer>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="main.js"></script>
+</body>
+</html>
